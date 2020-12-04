@@ -1,4 +1,10 @@
 import { createApp } from 'vue'
-import App from './App.vue'
+import DefaultTemplate from './layouts/DefaultTemplate.vue'
+import router from './routes'
 
-createApp(App).mount('#app')
+createApp(DefaultTemplate).use(router).mount('#app')
+
+/* new Veu({
+    router
+    render: h => h(DefaultTemplate),
+}).$mount('#app') */
